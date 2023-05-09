@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+<title>Machine Learning Lab Experiment Deployment</title>
+<!DOCTYPE html>
+
+h1 {text-align: center;}
+h2 {text-align: center;}
+h3 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+</style>
+</head>
+
+<body>
+ 
+     
+<div style="background-color:blue;" >
+<div>
+           
+<div>
+<center><p style="font-size:40px;color:white;margin-top:10px;">Poornima Institute of Engineering & Technology</p></center> 
+<center><p style="font-size:30px;color:white;margin-top:10px;">Department of Computer Engineering</p></center> 
+<center><p style="font-size:25px;color:white;margin-top:10px;">Machine Learning Lab Experiment Deployment</p></center> 
+</div>
+</div>
+</div>
+
+<div>
+<h2>K Means clustering Customer segmentation</h2>
+<h4>Developed by </h4>
+<!-- Main Input For Receiving Query to our ML -->
+<form action="{{ url_for('predict')}}"method="get">
+
+ 
+    <div>
+  <label for="exampleFormControlInput1" >Annual Income in $ for First customer</label>
+      <input type="number" name="income1" id="income1" value="" min="1" max="140" placeholder="" required="required">
+      </div>
+      <div>
+  <label for="exampleFormControlInput1" >spending Score for First customer</label>
+      <input type="number"  name="score1" id="score1" value=""min="1" max="100" placeholder="1" required="required">
+      </div>
+  <label for="exampleFormControlInput1" >Annual Income in for second customer $</label>
+      <input type="number" name="income2" id="income2" value="" min="1" max="140" placeholder="" required="required">
+      </div>
+      <div>
+  <label for="exampleFormControlInput1" >spending Score for second customer</label>
+      <input type="number"  name="score2" id="score2" value=""min="1" max="100" placeholder="1" required="required">
+      </div>
+       <div>
+      <label for="exampleFormControlInput1" >Annual Income in for Third Customer in  $</label>
+      <input type="number" name="income3" id="income3" value="" min="1" max="140" placeholder="" required="required">
+      </div>
+      <div>
+  <label for="exampleFormControlInput1" >spending Score for Third customer</label>
+      <input type="number"  name="score3" id="score3" value=""min="1" max="100" placeholder="1" required="required">
+      </div>
+       <div>
+      <label for="exampleFormControlInput1" >Annual Income in for Forth Customer $</label>
+      <input type="number" name="income4" id="income4" value="" min="1" max="140" placeholder="" required="required">
+      </div>
+      <div>
+  <label for="exampleFormControlInput1" >spending Score for Fourth customer</label>
+      <input type="number"  name="score4" id="score4" value=""min="1" max="100" placeholder="1" required="required">
+      </div>
+       <div>
+      <label for="exampleFormControlInput1" >Annual Income in for Fifth Customer $</label>
+      <input type="number" name="income5" id="income5" value="" min="1" max="140" placeholder="" required="required">
+      </div>
+      <div>
+  <label for="exampleFormControlInput1" >spending Score for Fifth customer</label>
+      <input type="number"  name="score5" id="score5" value=""min="1" max="100" placeholder="1" required="required">
+      </div>
+  <div>
+ 
+    <button type="submit" >predict type of Customer</button>
+  </div>
+</form>
+
+<br>
+<br>
+{{ prediction_text }}
+
+</div>
+
+<div style="background-color:blue;" >
+<div>
+           
+<div>
+ <center><p style="font-size:25px;color:white;margin-top:20px;">Machine Learning Lab Experiment 7</p></center> 
+</div>
+</div>
+</div>
+</body>
+</html>
